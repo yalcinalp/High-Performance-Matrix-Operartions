@@ -19,8 +19,6 @@ Performance will be measured using the **Cycles Per Element (CPE)** metric. High
 
 Normalization is a statistical process for scaling data. For this project, we use **min-max scaling** on matrices. Given a source matrix `M`, the normalized matrix `M'` is computed as:
 
-M' = (M - M_min) / (M_max - M_min)
-
 The function will:
 1. Identify the minimum and maximum values in the matrix.
 2. Scale each element of the matrix to a range between 0 and 1.
@@ -29,26 +27,9 @@ The function will:
 
 The Kronecker Product generates a larger matrix by scaling one matrix (`mat2`) by each element of another (`mat1`). For example:
 
-**Example:**
+**Examples:**
 
-Given:
-
-\( \text{mat1} = \begin{bmatrix} 0 & 2 \\ 1 & 3 \end{bmatrix} \)
-
-\( \text{mat2} = \begin{bmatrix} 5 & 6 & 7 \\ 8 & 9 & 10 \\ 11 & 12 & 13 \end{bmatrix} \)
-
-The Kronecker Product result is:
-
-\[
-\begin{bmatrix}
-0 & 0 & 0 & 10 & 12 & 14 \\
-0 & 0 & 0 & 16 & 18 & 20 \\
-0 & 0 & 0 & 22 & 24 & 26 \\
-5 & 6 & 7 & 15 & 18 & 21 \\
-8 & 9 & 10 & 24 & 27 & 30 \\
-11 & 12 & 13 & 33 & 36 & 39
-\end{bmatrix}
-\]
+![image](https://github.com/user-attachments/assets/019f8b1b-1296-4086-8256-3e0f537f0f06)
 
 produces a 6x6 matrix. The algorithm involves:
 1. Scaling `mat2` by each element of `mat1`.
