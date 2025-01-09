@@ -17,7 +17,7 @@ Performance will be measured using the **Cycles Per Element (CPE)** metric. High
 
 ### 1) Normalization
 
-Normalization is a statistical process for scaling data. For this project, we use **min-max scaling** on matrices. Given a source matrix `M`, the normalized matrix `M'` is computed as:
+Normalization is a statistical process for scaling data. For this project, we use **min-max scaling** on matrices.
 
 The function will:
 1. Identify the minimum and maximum values in the matrix.
