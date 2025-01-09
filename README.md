@@ -25,15 +25,11 @@ The function will:
 
 ### 2) Kronecker Product
 
-The Kronecker Product generates a larger matrix by scaling one matrix (`mat2`) by each element of another (`mat1`). For example:
+The Kronecker Product generates a larger matrix by scaling one matrix (`mat2`) by each element of another (`mat1`)
 
 **Examples:**
 
 ![image](https://github.com/user-attachments/assets/019f8b1b-1296-4086-8256-3e0f537f0f06)
-
-produces a 6x6 matrix. The algorithm involves:
-1. Scaling `mat2` by each element of `mat1`.
-2. Arranging the scaled results in the correct positions to form the final matrix.
 
 ---
 
@@ -53,9 +49,11 @@ Optimize memory access patterns for better cache utilization:
 - **Spatial locality**: Access elements stored close together.
 - **Temporal locality**: Reuse recently accessed data.
 
-Performance is measured in terms of speed-ups achieved by the optimized code over the naive baseline. Speed-ups are calculated as:
+Performance is measured in terms of speed-ups achieved by the optimized code over the naive baseline:
 
-\[
-\text{Speed-up} = \frac{\text{CPE}_{\text{naive}}}{\text{CPE}_{\text{optimized}}}
-\]
+![image](https://github.com/user-attachments/assets/dd2cf9d3-9a87-41d0-a39d-f6681a6f404c)
+
+![image](https://github.com/user-attachments/assets/4663a683-daf4-49c2-8aed-ba88707dde3d)
+
+
 
