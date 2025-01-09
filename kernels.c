@@ -7,10 +7,8 @@
 #include "defs.h"
 
 team_t team = {
-
         "eXXXXXX",      
         "Alp",       
-
 };
 
 /********************
@@ -54,10 +52,10 @@ void normalize(int dim, float *src, float *dst) {
     float max = src[0];
     
     int i;
-    int l = dim * dim;
-    int unrol = 4;
+    int limit = dim * dim;
+    int unroll = 4;
     
-    for (i = 0; i < l; i += unrol) {
+    for (i = 0; i < limit; i += unroll) {
         float val1 = src[i];
         float val2 = src[i+1];
         float val3 = src[i+2];
@@ -76,7 +74,7 @@ void normalize(int dim, float *src, float *dst) {
 
     float scale = 1.0f / (max - min);
     
-    for (i = 0; i < l; i += unrol) {
+    for (i = 0; i < limit; i += unroll) {
         dst[i] = (src[i] - min) * scale;
         dst[i+1] = (src[i+1] - min) * scale;
         dst[i+2] = (src[i+2] - min) * scale;
