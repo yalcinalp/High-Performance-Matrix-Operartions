@@ -1,4 +1,4 @@
-# Student's Makefile for the CS:APP Performance Lab
+# Makefile for the CS:APP Performance Lab
 TEAM =
 VERSION = 1
 HANDINDIR = 
