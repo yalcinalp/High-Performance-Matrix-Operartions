@@ -33,7 +33,7 @@ The Kronecker Product generates a larger matrix by scaling one matrix (`mat2`) b
 
 ---
 
-## Optimization Techniques
+## Optimization Techniques:
 
 ### Code Motion
 Reorganize computations to reduce redundancy.
