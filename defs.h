@@ -1,7 +1,5 @@
 /*
  * driver.h - Various definitions for the Performance Lab.
- * 
- * DO NOT MODIFY ANYTHING IN THIS FILE
  */
 #ifndef _DEFS_H_
 #define _DEFS_H_
@@ -11,7 +9,6 @@
 #define RIDX(i,j,n) ((i)*(n)+(j))
 
 typedef struct {
-  //char *team_name;
     char *ID1, *name1;
     char *ID2, *name2;
 } team_t;
