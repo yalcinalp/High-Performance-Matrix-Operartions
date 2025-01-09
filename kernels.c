@@ -13,7 +13,6 @@ team_t team = {
 
 };
 
-
 /********************
  * NORMALIZATION KERNEL
  ********************/
