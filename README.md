@@ -15,7 +15,7 @@ Performance will be measured using the **Cycles Per Element (CPE)** metric. High
 
 ## Algorithms:
 
-### 1) Normalization
+### 1) Matrix Normalization
 
 Normalization is a statistical process for scaling data. For this project, we use **min-max scaling** on matrices.
 
