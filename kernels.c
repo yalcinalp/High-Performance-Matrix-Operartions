@@ -127,7 +127,7 @@ void kronecker_product(int dim1, int dim2, float *mat1, float *mat2, float *prod
             for (k = 0; k < dim2; k++) {
                 int    r = (i * dim2 + k) * (dim1 * dim2);
                 
-                float *mat2_ptr  = &mat2[RIDX(k, 0, dim2)];
+                float *mat2_ptr = &mat2[RIDX(k, 0, dim2)];
                 float *prod_ptr = &prod[r + c];
 
                 for (l = 0; l < dim2; l += 4) {
